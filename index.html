@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Innovation Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Team Innovation</div>
+        <div class="nav-links" id="navLinks">
+            <a href="#hero" data-en="Home" data-ar="الرئيسية">Home</a>
+            <a href="#problem" data-en="Problem" data-ar="المشكلة">Problem</a>
+            <a href="#ai-solutions" data-en="AI Solutions" data-ar="حلول الذكاء">AI Solutions</a>
+            <a href="#solution" data-en="Solution" data-ar="الحل">Solution</a>
+            <a href="#value" data-en="Value" data-ar="القيمة">Value</a>
+            <a href="#team" data-en="Team" data-ar="الفريق">Team</a>
+            <a href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+            <button class="lang-toggle" id="langToggle" aria-label="Toggle Language">العربية</button>
+            <div class="hamburger" id="hamburger" aria-label="Toggle Menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Revolutionizing Problem Solving with AI" data-ar="ثورة في حل المشكلات بالذكاء الاصطناعي">Revolutionizing Problem Solving with AI</h1>
+            <p class="hero-subtitle" data-en="Our innovative platform leverages artificial intelligence to generate creative solutions to complex challenges facing businesses and individuals." data-ar="منصتنا المبتكرة تستفيد من الذكاء الاصطناعي لتوليد حلول إبداعية للتحديات المعقدة التي تواجه الأفراد والمؤسسات.">Our innovative platform leverages artificial intelligence to generate creative solutions to complex challenges facing businesses and individuals.</p>
+            <div class="hero-buttons">
+                <a href="#ai-solutions" class="btn-primary" data-en="Try AI Solutions" data-ar="جرب حلول الذكاء">Try AI Solutions</a>
+                <a href="#solution" class="btn-secondary" data-en="Learn More" data-ar="اعرف المزيد">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem" id="problem">
+        <h2 class="section-title reveal" data-en="The Problem" data-ar="المشكلة">The Problem</h2>
+        <p class="section-subtitle reveal" data-en="Understanding the challenges we face in modern problem-solving" data-ar="فهم التحديات التي نواجهها في حل المشكلات الحديثة">Understanding the challenges we face in modern problem-solving</p>
+        <div class="problem-content reveal">
+            <p class="problem-text" data-en="In today's fast-paced world, individuals and organizations constantly face complex problems that require innovative solutions. Traditional problem-solving methods often fall short when dealing with multifaceted challenges that span multiple domains. The sheer volume of information available can be overwhelming, making it difficult to identify the most effective approaches." data-ar="في عالم سريع التغير اليوم، يواجه الأفراد والمؤسسات باستمرار مشكلات معقدة تتطلب حلولاً مبتكرة. غالباً ما تقصر أساليب حل المشكلات التقليدية عند التعامل مع التحديات متعددة الأوجه التي تمتد عبر مجالات متعددة. يمكن أن تكون كمية المعلومات المتاحة ساحقة، مما يجعل من الصعب تحديد أكثر النهج فعالية.">In today's fast-paced world, individuals and organizations constantly face complex problems that require innovative solutions. Traditional problem-solving methods often fall short when dealing with multifaceted challenges that span multiple domains. The sheer volume of information available can be overwhelming, making it difficult to identify the most effective approaches.</p>
+            <br>
+            <p class="problem-text" data-en="Additionally, cognitive biases and limited perspectives can narrow the solution space, preventing people from seeing alternative approaches that might be more effective. This leads to suboptimal decisions, wasted resources, and missed opportunities for innovation and growth." data-ar="بالإضافة إلى ذلك، يمكن أن تحد من الانحيازات المعرفية والمنظورات المحدودة مساحة الحلول، مما يمنع الناس من رؤية النهج البديلة التي قد تكون أكثر فعالية. هذا يؤدي إلى قرارات دون المستوى الأمثل، وإهدار للموارد، وضياع فرص الابتكار والنمو.">Additionally, cognitive biases and limited perspectives can narrow the solution space, preventing people from seeing alternative approaches that might be more effective. This leads to suboptimal decisions, wasted resources, and missed opportunities for innovation and growth.</p>
+        </div>
+    </section>
+
+    <!-- AI Solutions Section -->
+    <section class="ai-solutions" id="ai-solutions">
+        <h2 class="section-title reveal" data-en="AI-Powered Solutions" data-ar="حلول مدعومة بالذكاء الاصطناعي">AI-Powered Solutions</h2>
+        <p class="section-subtitle reveal" data-en="Describe your problem and let our AI generate creative solutions" data-ar="صف مشكلتك ودع ذكاءنا الاصطناعي يولد حلولاً إبداعية">Describe your problem and let our AI generate creative solutions</p>
+        <div class="ai-input-container reveal">
+            <textarea class="ai-textarea" id="problemInput" data-en-placeholder="Describe your problem..." data-ar-placeholder="اكتب المشكلة التي تواجهها..." placeholder="Describe your problem..."></textarea>
+            <button class="ai-button" id="generateSolutions" data-en="Generate Solutions" data-ar="اقترح حلول">Generate Solutions</button>
+        </div>
+        <div class="ai-loading" id="aiLoading">
+            <div class="ai-loading-spinner"></div>
+            <p class="ai-loading-text" data-en="AI is analyzing your problem..." data-ar="الذكاء الاصطناعي يحلل مشكلتك...">AI is analyzing your problem...</p>
+        </div>
+        <div class="ai-solutions-container" id="aiSolutionsContainer"></div>
+    </section>
+
+    <!-- Our Solution Section -->
+    <section class="solution" id="solution">
+        <h2 class="section-title reveal" data-en="Our Solution" data-ar="حلنا">Our Solution</h2>
+        <p class="section-subtitle reveal" data-en="How we are transforming problem-solving" data-ar="كيف نحول حل المشكلات">How we are transforming problem-solving</p>
+        <div class="solution-grid">
+            <div class="solution-image reveal">
+                <img src="https://picsum.photos/seed/innovation42/600/400.jpg" alt="Innovation">
+            </div>
+            <div class="solution-content reveal">
+                <h3 data-en="AI-Powered Problem Analysis" data-ar="تحليل المشكلات المدعوم بالذكاء الاصطناعي">AI-Powered Problem Analysis</h3>
+                <p data-en="Our platform uses advanced artificial intelligence algorithms to analyze problems from multiple perspectives, identifying patterns and connections that humans might miss. By processing vast amounts of data and drawing from diverse knowledge domains, our AI generates comprehensive, creative solutions tailored to each unique challenge." data-ar="تستخدم منصتنا خوارزميات ذكاء اصطناعي متقدمة لتحليل المشكلات من زوايا متعددة، وتحديد الأنماط والاتصالات التي قد يفوتها البشر. من خلال معالجة كميات هائلة من البيانات والاستفادة من مجالات المعرفة المتنوعة، يقوم الذكاء الاصطناعي بتوليد حلول شاملة وإبداعية مصممة لكل تحد فريد.">Our platform uses advanced artificial intelligence algorithms to analyze problems from multiple perspectives, identifying patterns and connections that humans might miss. By processing vast amounts of data and drawing from diverse knowledge domains, our AI generates comprehensive, creative solutions tailored to each unique challenge.</p>
+                <p data-en="Unlike traditional approaches, our AI combines elements from design thinking, systems theory, and creative problem-solving techniques to provide a holistic approach to any challenge." data-ar="على عكس الأساليب التقليدية، يجمع ذكاؤنا الاصطناعي بين عناصر التفكير التصميمي ونظرية الأنظمة وتقنيات حل المشكلات الإبداعية لتقديم نهج شامل لأي تحد.">Unlike traditional approaches, our AI combines elements from design thinking, systems theory, and creative problem-solving techniques to provide a holistic approach to any challenge.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value" id="value">
+        <h2 class="section-title reveal" data-en="Value Proposition" data-ar="عرض القيمة">Value Proposition</h2>
+        <p class="section-subtitle reveal" data-en="Key benefits of our AI-powered solution" data-ar="الفوائد الرئيسية لحلنا المدعوم بالذكاء الاصطناعي">Key benefits of our AI-powered solution</p>
+        <div class="value-cards">
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3 class="value-title" data-en="Innovative Solutions" data-ar="حلول مبتكرة">Innovative Solutions</h3>
+                <p class="value-text" data-en="Generate creative and unconventional approaches by leveraging AI's ability to connect disparate ideas across domains and industries." data-ar="توليد مناهج إبداعية وغير تقليدية من خلال الاستفادة من قدرة الذكاء الاصطناعي على ربط الأفكار المتباينة عبر المجالات والصناعات.">Generate creative and unconventional approaches by leveraging AI's ability to connect disparate ideas across domains and industries.</p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fas fa-clock"></i></div>
+                <h3 class="value-title" data-en="Time Efficiency" data-ar="كفاءة الوقت">Time Efficiency</h3>
+                <p class="value-text" data-en="Reduce hours of brainstorming and research to minutes. Our AI rapidly processes information to deliver multiple solution options instantly." data-ar="تقليل ساعات العصف الذهني والبحث إلى دقائق. يقوم الذكاء الاصطناعي بمعالجة المعلومات بسرعة لتقديم خيارات حل متعددة فوراً.">Reduce hours of brainstorming and research to minutes. Our AI rapidly processes information to deliver multiple solution options instantly.</p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                <h3 class="value-title" data-en="Expanded Perspective" data-ar="منظور موسع">Expanded Perspective</h3>
+                <p class="value-text" data-en="Overcome cognitive biases and limited viewpoints by accessing AI-generated solutions that consider multiple angles and possibilities." data-ar="التغلب على الانحيازات المعرفية وجهات النظر المحدودة من خلال الوصول إلى حلول يولدها الذكاء الاصطناعي تأخذ في الاعتبار زوايا وإمكانيات متعددة.">Overcome cognitive biases and limited viewpoints by accessing AI-generated solutions that consider multiple angles and possibilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <h2 class="section-title reveal" data-en="Our Team" data-ar="فريقنا">Our Team</h2>
+        <p class="section-subtitle reveal" data-en="Meet the brilliant minds behind our innovation" data-ar="تعرف على العقول الرائعة وراء ابتكارنا">Meet the brilliant minds behind our innovation</p>
+        <div class="team-grid">
+            <div class="team-card reveal">
+                <div class="team-image"><img src="https://picsum.photos/seed/person1a/400/300.jpg" alt="Team Member"></div>
+                <div class="team-info">
+                    <h3 class="team-name" data-en="alrasheed mohammed" data-ar="الرشيد محمد">alrasheed mohammed</h3>
+                    <p class="team-role" data-en="project manager" data-ar="مدير المشروع">Project Manager </p>
+                    <p class="team-bio" data-en="Former AI researcher at MIT with 10+ years in machine learning and natural language processing." data-ar="باحثة سابقة في الذكاء الاصطناعي بمعهد ماساتشوستس مع أكثر من 10 سنوات في التعلم الآلي ومعالجة اللغات الطبيعية.">Former AI researcher at MIT with 10+ years in machine learning and natural language processing.</p>
+                    <div class="team-contribution">
+                        <p class="team-contribution-title" data-en="Key Contribution" data-ar="المساهمة الرئيسية">Key Contribution</p>
+                        <p class="team-contribution-text" data-en="Vision and strategic direction" data-ar="الرؤية والتوجه الاستراتيجي">Vision and strategic direction</p>
+                         <a href="https://github.com/alrashed00" class="github-link" data-en="Github Profile" data-ar="ملف شخصي">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-image"><img src="https://picsum.photos/seed/person2b/400/300.jpg" alt="Team Member"></div>
+                <div class="team-info">
+                    <h3 class="team-name" data-en="Najm eldin abdulkarim daud" data-ar="نجم الدين عبد الكريم داود">Najm eldin abdulkarim daud</h3>
+                    <p class="team-role" data-en="DB Manager" data-ar="مدير قاعدة البيانات">DB Manager</p>
+                    <p class="team-bio" data-en="Database Developer with expertise in designing and implementing robust database solutions." data-ar="مطور قواعد بيانات مع خبرة في تصميم وتنفيذ حلول قواعد بيانات قوية.">Database Developer with expertise in designing and implementing robust database solutions.</p>
+                    <div class="team-contribution">
+                        <p class="team-contribution-title" data-en="Key Contribution" data-ar="المساهمة الرئيسية">Key Contribution</p>
+                        <p class="team-contribution-text" data-en="Database design and optimization" data-ar="تصميم وتحسين قواعد البيانات">Database design and optimization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-image"><img src="https://picsum.photos/seed/person3c/400/300.jpg" alt="Team Member"></div>
+                <div class="team-info">
+                    <h3 class="team-name" data-en="NZABONIMPA Prince Gabin" data-ar="الراشد محمد">NZABONIMPA Prince Gabin</h3>
+                    <p class="team-role" data-en="frontend developer" data-ar="مطور الواجهة">Frontend Developer</p>
+                    <p class="team-bio" data-en="Passionate frontend developer with expertise in creating responsive and user-friendly web applications." data-ar="مطور واجهة متحمس مع خبرة في إنشاء تطبيقات ويب مستجيبة وسهلة الاستخدام.">Passionate frontend developer with expertise in creating responsive and user-friendly web applications.</p>
+                    <div class="team-contribution">
+                        <p class="team-contribution-title" data-en="Key Contribution" data-ar="المساهمة الرئيسية">Key Contribution</p>
+                        <p class="team-contribution-text" data-en="User interface development and optimization" data-ar="تطوير وتحسين واجهة المستخدم">User interface development and optimization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-image"><img src="https://picsum.photos/seed/person4d/400/300.jpg" alt="Team Member"></div>
+                <div class="team-info">
+                    <h3 class="team-name" data-en="BARITONDA Jean Pacifique" data-ar="جيمس ويلسون">BARITONDA Jean Pacifique</h3>
+                    <p class="team-role" data-en="Backend Developer" data-ar="مطور الخلفية">Backend Developer</p>
+                    <p class="team-bio" data-en="Experienced backend developer with a strong focus on building scalable and maintainable server-side applications." data-ar="مطور خلفية ذو خبرة في بناء تطبيقات الخلفية القابلة للتوسع والصيانة.">Experienced backend developer with a strong focus on building scalable and maintainable server-side applications.</p>
+                    <div class="team-contribution">
+                        <p class="team-contribution-title" data-en="Key Contribution" data-ar="المساهمة الرئيسية">Key Contribution</p>
+                        <p class="team-contribution-text" data-en="Backend architecture and API development" data-ar="تصميم البنية الخلفية وتطوير واجهات البرمجة">Backend architecture and API development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-image"><img src="https://picsum.photos/seed/person5e/400/300.jpg" alt="Team Member"></div>
+                <div class="team-info">
+                    <h3 class="team-name" data-en="Rukimbira Answer" data-ar="عائشة باتل">Rukimbira Answer</h3>
+                    <p class="team-role" data-en="System tester " data-ar="مدير النظام">System tester </p>
+                    <p class="team-bio" data-en="Experienced system tester with a strong focus on maintaining secure and efficient IT infrastructure." data-ar="مدير نظام ذو خبرة في صيانة البنية التحتية للحوسبة الآمنة والفعالة.">Experienced system tester    with a strong focus on maintaining secure and efficient IT infrastructure.</p>
+                    <div class="team-contribution">
+                        <p class="team-contribution-title" data-en="Key Contribution" data-ar="المساهمة الرئيسية">Key Contribution</p>
+                        <p class="team-contribution-text" data-en="Data processing and relevance optimization" data-ar="معالجة البيانات وتحسين الصلة">Data processing and relevance optimization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card reveal">
+                <div class="team-image"><img src="https://picsum.photos/seed/person6f/400/300.jpg" alt="Team Member"></div>
+                <div class="team-info">
+                    <h3 class="team-name" data-en="Ayman Muawia" data-ar="أيمن موآية">Ayman Muawia</h3>
+                    <p class="team-role" data-en="Deployment/DevOps Engineer" data-ar="مهندس النشر">Deployment/DevOps Engineer</p>
+                    <p class="team-bio" data-en="Experienced deployment engineer with a strong focus on automating and optimizing deployment processes." data-ar="مهندس نشر ذو خبرة في تطوير وتحسين عمليات النشر.">Experienced deployment engineer with a strong focus on automating and optimizing deployment processes.</p>
+                    <div class="team-contribution">
+                        <p class="team-contribution-title" data-en="Key Contribution" data-ar="المساهمة الرئيسية">Key Contribution</p>
+                        <p class="team-contribution-text" data-en="Deployment automation and infrastructure management" data-ar="أتمتة النشر وإدارة البنية التحتية">Deployment automation and infrastructure management</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title reveal" data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+        <p class="section-subtitle reveal" data-en="Have questions or want to learn more? We would love to hear from you." data-ar="هل لديك أسئلة أو تريد معرفة المزيد؟ نود أن نسمع منك.">Have questions or want to learn more? We would love to hear from you.</p>
+        <div class="contact-container reveal">
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="nameInput" data-en="Name" data-ar="الاسم">Name</label>
+                    <input type="text" class="form-input" id="nameInput" required>
+                    <p class="form-error" id="nameError" data-en="Please enter your name" data-ar="يرجى إدخال اسمك">Please enter your name</p>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="emailInput" data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+                    <input type="email" class="form-input" id="emailInput" required>
+                    <p class="form-error" id="emailError" data-en="Please enter a valid email" data-ar="يرجى إدخال بريد إلكتروني صالح">Please enter a valid email</p>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="messageInput" data-en="Message" data-ar="الرسالة">Message</label>
+                    <textarea class="form-textarea" id="messageInput" required></textarea>
+                    <p class="form-error" id="messageError" data-en="Please enter your message" data-ar="يرجى إدخال رسالتك">Please enter your message</p>
+                </div>
+                <button type="submit" class="form-submit" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+                <div class="form-success" id="formSuccess" data-en="Your message has been sent successfully!" data-ar="تم إرسال رسالتك بنجاح!">Your message has been sent successfully!</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-text" data-en="2024 Team Innovation Portfolio. All rights reserved." data-ar="2024 محفظة فريق الابتكار. جميع الحقوق محفوظة.">2024 Team Innovation Portfolio. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" class="footer-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="footer-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="footer-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
